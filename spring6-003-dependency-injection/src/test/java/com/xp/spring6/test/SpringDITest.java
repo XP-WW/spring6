@@ -91,4 +91,8 @@ public class SpringDITest {
         MathBean mathBean = applicationContext.getBean("MathBean", MathBean.class);
         System.out.println(mathBean);
     }
+    @Test
+    public void testGit(){
+        System.out.println("git test .....");
+    }
 }
