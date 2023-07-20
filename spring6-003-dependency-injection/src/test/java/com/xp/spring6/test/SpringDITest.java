@@ -102,5 +102,6 @@ public class SpringDITest {
         System.out.println("test 7 ......");
         System.out.println("test 8 ......");
         System.out.println("test 9 ......");
+        System.out.println("test 10 ......");
     }
 }
