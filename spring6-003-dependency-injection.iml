@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring" removed="false">
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/set-di.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/cascade.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-array.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-collection.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>

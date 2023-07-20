@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="personBean" class="com.xp.spring6.bean.Person">
+        <!--注入List集合-->
+        <property name="names">
+            <!--list集合有序可重复-->
+            <list>
+                <!--<ref>如果是引用类型</ref>-->
+                <value>张三</value>
+                <value>李四</value>
+                <value>王五</value>
+                <value>王五</value>
+                <value>王五</value>
+            </list>
+        </property>
+        <!--注入set集合-->
+        <property name="address">
+            <!--set集合无序不可重复-->
+            <set>
+                <!--<ref>如果是引用类型</ref>-->
+                <value>北京大兴区</value>
+                <value>北京大兴区</value>
+                <value>北京海淀区</value>
+                <value>北京海淀区</value>
+                <value>北京海淀区</value>
+            </set>
+        </property>
+        <!--注入map集合-->
+        <property name="phones">
+            <map>
+                <!--
+                    如果key和value不是简单类型就用这个配置
+                    <entry key-ref="" value-ref=""/>
+                -->
+                <entry key="1" value="110"/>
+                <entry key="2" value="120"/>
+                <entry key="3" value="130"/>
+                <entry key="4" value="140"/>
+            </map>
+        </property>
+        <property name="properties">
+            <!--注入properties属性类-->
+            <props>
+                <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+                <prop key="url">jdbc:mysql://localhost:3306/spring6</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

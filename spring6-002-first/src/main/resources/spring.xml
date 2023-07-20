@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--这就是spring的配置文件-->
+    <bean id="userBean" class="com.xp.spring6.bean.User"/>
+    <bean id="userDaoBean" class="com.xp.spring6.dao.UserDaoImplForMySQL"/>
+    <bean id="dateBean" class="java.util.Date"/>
+</beans>
