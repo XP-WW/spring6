@@ -95,5 +95,6 @@ public class SpringDITest {
     public void testGit(){
         System.out.println("git test .....");
         System.out.println("test 2 ......");
+        System.out.println("test 3 ......");
     }
 }
