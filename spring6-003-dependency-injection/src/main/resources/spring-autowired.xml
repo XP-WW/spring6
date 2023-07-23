@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="orderDao" class="com.xp.spring6.dao.OrderDao"/>
+    <bean id="orderService" class="com.xp.spring6.service.OrderService">
+        <property name="orderDao" ref="orderDao"/>
+    </bean>-->
+    <!--根据名字进行自动装配-->
+    <!--基于set方法，必须要有set方法-->
+    <bean id="orderService" class="com.xp.spring6.service.OrderService" autowire="byName"/>
+
+    <bean id="orderDao" class="com.xp.spring6.dao.OrderDao"/>
+
+    <!--根据类型进行自动装配-->
+    <!--基于set装配-->
+    <bean class="com.xp.spring6.dao.UserDao"/>
+    <bean class="com.xp.spring6.dao.VipDao"/>
+    <bean id="cs" class="com.xp.spring6.service.CustomerService" autowire="byType"/>
+</beans>

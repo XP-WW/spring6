@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!--引入util命名空间
+        在spring的配置文件中头部添加：
+        1.xmlns:util="http://www.springframework.org/schema/util"
+        2. http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    -->
+    <util:properties id="prop">
+        <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+        <prop key="url">jdbc:mysql://localhost:3306/spring6</prop>
+        <prop key="username">root</prop>
+        <prop key="password">root</prop>
+    </util:properties>
+    <!--数据源1-->
+    <bean id="ds1" class="com.xp.spring6.jdbc.MyDataSource1">
+        <property name="properties" ref="prop"/>
+    </bean>
+    <!--数据源2-->
+    <bean id="ds2" class="com.xp.spring6.jdbc.MyDataSource2">
+        <property name="properties" ref="prop"/>
+    </bean>
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        第一步：在spring的配置文件头部添加c命名空间。xmlns:c="http://www.springframework.org/schema/c"
+        第二步：使用
+        c:_下标
+        c:name 参数名方式
+    -->
+    <!--<bean id="peopleBean" class="com.xp.spring6.bean.People" c:_0="zhangsan" c:_1="20" c:_2="true"/>-->
+<!--
+    <bean id="peopleBean" class="com.xp.spring6.bean.People" c:name="name" c:age="20" c:sex="true"/>
+-->
+    <bean id="myTimeBean" class="com.xp.spring6.bean.MyTime" c:year="1970" c:month="9" c:day="5"/>
+</beans>

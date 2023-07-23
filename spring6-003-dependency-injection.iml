@@ -10,6 +10,13 @@
           <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/cascade.xml</file>
           <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-array.xml</file>
           <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-collection.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-p.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/sping-c.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-c.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-util.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/spring-autowired.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-autowired.xml</file>
+          <file>file://$MODULE_DIR$/spring6-003-dependency-injection/src/main/resources/spring-properties.xml</file>
         </fileset>
       </configuration>
     </facet>
