@@ -2,7 +2,7 @@ package com.xp.spring6.bean;
 
 import org.springframework.beans.factory.FactoryBean;
 
-import java.text.ParseException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
