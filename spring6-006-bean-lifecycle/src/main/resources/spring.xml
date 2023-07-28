@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置Bean后处理器-->
+    <!--注意这个Bean后处理器将作用与整个配置文件的所有Bean-->
+    <bean class="com.xp.spring6.LogBeanPostProcessor"/>
+
+    <bean id="user" class="com.xp.spring6.User" init-method="initBean"
+          destroy-method="destroyBean" scope="prototype">
+        <property name="name" value="张三"/>
+    </bean>
+
+    <!--<bean id="vip" class="com.xp.spring6.Vip"/>-->
+</beans>

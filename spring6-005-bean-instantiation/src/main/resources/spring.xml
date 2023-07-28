@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--Spring提供的实例化方法-->
+
+    <!--第一种：在spring配置文件中直接配置类全路径，spring会自动调用该类的无参数构造方法来实例化Bean-->
+    <bean id="sb" class="com.xp.spring6.bean.SpringBean"/>
+
+    <!--第二种：通过简单工厂模式-->
+    <!--factory-method属性指定的是工厂类当中的静态方法-->
+    <bean id="starBean" class="com.xp.spring6.bean.StarFactory" factory-method="get"/>
+
+    <!--第三种：通过工厂方法模式-->
+    <!--factory-bean属性+factory-method属性来共同完成-->
+    <bean id="gunFactory" class="com.xp.spring6.bean.GunFactory"/>
+    <bean id="gun" factory-bean="gunFactory" factory-method="get"/>
+
+    <!--第四种：通过FactoryBean接口实例化-->
+    <!--第三种的简化模式，实现了FactoryBean接口，就是一个特殊的类，不需要你指定-->
+    <bean id="personFactory" class="com.xp.spring6.bean.PersonFactoryBean"/>
+
+
+
+   <!-- <bean id="student" class="com.xp.spring6.bean.Student">
+        <property name="birth" value="Mon Oct 10 14:30:26 CST 2023"/>
+    </bean>-->
+
+    <bean id="date" class="com.xp.spring6.bean.DateFactoryBean">
+        <constructor-arg index="0" value="1980-10-11"/>
+    </bean>
+    <bean id="student" class="com.xp.spring6.bean.Student">
+        <property name="birth" ref="date"/>
+    </bean>
+
+</beans>
