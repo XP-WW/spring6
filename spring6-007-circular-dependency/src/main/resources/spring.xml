@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--singleton + setter 模式下的循环依赖是没有任何问题的-->
+    <bean id="husbandBean" class="com.xp.spring.bean.Husband">
+        <property name="name" value="张三"/>
+        <property name="wife" ref="wifeBean"/>
+    </bean>
+
+    <bean id="wifeBean" class="com.xp.spring.bean.Wife">
+        <property name="name" value="小花"/>
+        <property name="husband" ref="husbandBean"/>
+    </bean>
+
+
+    <!--prototype + setter 模式下的循环依赖会出现异常-->
+    <!--当两个Bean的scope都是prototype，才会出现异常-->
+    <!--<bean id="husbandBean" class="com.xp.spring6.Husband" scope="prototype">
+        <property name="name" value="张三"/>
+        <property name="wife" ref="wifeBean"/>
+    </bean>
+
+    <bean id="wifeBean" class="com.xp.spring6.Wife" scope="prototype">
+        <property name="name" value="小花"/>
+        <property name="husband" ref="husbandBean"/>
+    </bean>-->
+</beans>

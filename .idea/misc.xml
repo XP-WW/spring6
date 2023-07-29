@@ -12,7 +12,20 @@
         <option value="$PROJECT_DIR$/factory-method/pom.xml" />
         <option value="$PROJECT_DIR$/spring6-005-bean-instantiation/pom.xml" />
         <option value="$PROJECT_DIR$/spring6-006-bean-lifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-007-circular-dependency/pom.xml" />
+        <option value="$PROJECT_DIR$/spring6-007-circular-dependency/pom.xml" />
+        <option value="$PROJECT_DIR$/review-reflect/pom.xml" />
+        <option value="$PROJECT_DIR$/review-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-008-ioc-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring6-008-ioc-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/static-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-proxy-jdk/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-007-circular-dependency/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">

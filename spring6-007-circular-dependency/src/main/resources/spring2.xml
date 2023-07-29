@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--构造注入，循环依赖无法解决-->
+   <!--<bean id="h" class="com.xp.spring.bean2.Husband" scope="singleton">
+        <constructor-arg index="0" value="张三"/>
+        <constructor-arg index="1" ref="w"/>
+    </bean>
+
+    <bean id="w" class="com.xp.spring.bean2.Wife" scope="singleton">
+        <constructor-arg index="0" value="小花"/>
+        <constructor-arg index="1" ref="h"/>
+    </bean>-->
+</beans>
